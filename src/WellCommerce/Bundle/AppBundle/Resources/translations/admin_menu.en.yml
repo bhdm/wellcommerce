@@ -1,51 +1,51 @@
-attribute_group: 'Variant groups'
-availability: Availability
-catalog: Catalog
-category: Categories
-coupon: Coupons
-client: Clients
-client_group: 'Client groups'
-cms: CMS
-configuration: Configuration
-contact: Contacts
-crm: CRM
-currency: Currencies
-dashboard: Dashboard
-deliverer: Deliverers
-dictionary: Translations
-integration: Integrations
-layout: Layout
-layout_box: Boxes
-locale: Languages
-localization: Internationalization
-media: 'Media management'
-news: News
-order: Orders
-payment_method: 'Payment methods'
-producer: Producers
-product: Products
-product_status: 'Product statuses'
-product_review: 'Product reviews'
-promotion: Promotions
-promotions: Promotions
-reports: Reports
-review: Reviews
-routing: Routing configuration
-sales: Sales
-shipping_method: 'Shipping methods'
-tax: Taxes
-theme: Themes
-package: Packages
-channel: Channels
-distribution: 'Application management'
-multi_store: 'Multistore management'
-company: Companies
-shop: Shops
-unit: Units
-order_status: 'Order statuses'
-order_status_group: 'Order status groups'
-sales_report: Sales report
-page: Pages
-user_management: Users management
-user: Users
-user_group: Users groups
+attribute_group:  'Вариант группы'
+availability: 'Доступность'
+catalog:  'Каталог'
+category: 'категории'
+coupon: 'купоны'
+client: 'клиенты'
+client_group: 'группы клиентов'
+cms:  'CMS'
+configuration:  'конфигурация'
+contact:  'контакты'
+crm:  'CRM'
+currency: 'валюты'
+dashboard:  'Панель'
+deliverer:  'сдатчиков'
+dictionary: 'Переводы'
+integration:  'Интеграции'
+layout: 'раскладка'
+layout_box: 'Ящики'
+locale: 'Языки'
+localization: 'интернационализация'
+media:  'управление СМИ'
+news: 'Новости'
+order:  'заказы'
+payment_method: 'Способы оплаты'
+producer: 'Производители'
+product:  'Продукты'
+product_status: 'статусы продукта'
+product_review: 'отзывы о продукте'
+promotion:  'Акции'
+promotions: 'Акции'
+reports:  'Отчеты'
+review: 'Отзывы'
+routing:  'конфигурация маршрутизации'
+sales:  'Продажи'
+shipping_method:  'Методы доставки'
+tax:  'налоги'
+theme:  'Темы'
+package:  'пакеты'
+channel:  'каналы'
+distribution: 'Управление приложением'
+multi_store:  'управление'
+company:  'Компании'
+shop: 'Магазины'
+unit: 'Единицы'
+order_status: 'Заказать статусы'
+order_status_group: 'группы Статус заказа'
+sales_report: 'Отчет о продажах'
+page: 'страницы'
+user_management:  'управление пользователями'
+user: 'пользователей'
+user_group: 'группы пользователей'
