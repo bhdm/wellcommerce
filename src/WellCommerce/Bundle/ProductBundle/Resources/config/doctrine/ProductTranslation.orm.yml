@@ -9,6 +9,10 @@ WellCommerce\Bundle\ProductBundle\Entity\ProductTranslation:
             type: string
             length: 255
             nullable: false
+        model:
+            type: string
+            length: 255
+            nullable: false
         shortDescription:
             type: text
             nullable: true

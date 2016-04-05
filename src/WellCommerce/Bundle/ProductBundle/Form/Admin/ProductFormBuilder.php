@@ -46,6 +46,14 @@ class ProductFormBuilder extends AbstractFormBuilder
             'transformer' => $this->getRepositoryTransformer('translation', $this->get('product.repository'))
         ]));
 
+        $mainData->addChild($this->getElement('text_field', [
+            'name'  => 'sku',
+            'label' => $this->trans('common.label.sku'),
+            'rules' => [
+                $this->getRule('required')
+            ],
+        ]));
+
         $name = $languageData->addChild($this->getElement('text_field', [
             'name'  => 'name',
             'label' => $this->trans('common.label.name'),
@@ -53,6 +61,34 @@ class ProductFormBuilder extends AbstractFormBuilder
                 $this->getRule('required')
             ],
         ]));
+
+        $model = $languageData->addChild($this->getElement('text_field', [
+            'name'  => 'model',
+            'label' => $this->trans('common.label.model'),
+            'rules' => [
+                $this->getRule('required')
+            ],
+        ]));
+
+
+//        $languageData->addChild($this->getElement('select', [
+//            'name'        => 'producer',
+//            'label'       => $this->trans('common.label.producer'),
+//            'options'     => $this->get('producer.dataset.admin')->getResult('select'),
+//            'transformer' => $this->getRepositoryTransformer('entity', $this->get('producer.repository')),
+//        ]));
+        $languageData->addChild($this->getElement('select', [
+            'name'            => 'producer',
+            'label'           => $this->trans('common.label.producer'),
+            'options'         => $this->get('producer.dataset.admin')->getResult('select'),
+            'addable'         => true,
+            'onAdd'           => 'onProducerAdd',
+            'add_item_prompt' => $this->trans('product.label.add_producer'),
+            'transformer'     => $this->getRepositoryTransformer('entity', $this->get('producer.repository'))
+        ]));
+
+
+
 
         $languageData->addChild($this->getElement('slug_field', [
             'name'            => 'slug',
@@ -92,20 +128,6 @@ class ProductFormBuilder extends AbstractFormBuilder
             'label' => $this->trans('common.label.description'),
         ]));
 
-        $mainData->addChild($this->getElement('text_field', [
-            'name'  => 'sku',
-            'label' => $this->trans('common.label.sku'),
-            'rules' => [
-                $this->getRule('required')
-            ],
-        ]));
-
-        $mainData->addChild($this->getElement('select', [
-            'name'        => 'producer',
-            'label'       => $this->trans('common.label.producer'),
-            'options'     => $this->get('producer.dataset.admin')->getResult('select'),
-            'transformer' => $this->getRepositoryTransformer('entity', $this->get('producer.repository')),
-        ]));
 
         $metaData = $form->addChild($this->getElement('nested_fieldset', [
             'name'  => 'meta_data',

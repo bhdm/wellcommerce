@@ -51,9 +51,9 @@ class ProducerFormBuilder extends AbstractFormBuilder
             'name_field'      => $name,
             'generate_route'  => 'admin.routing.generate',
             'translatable_id' => $this->getRequestHelper()->getAttributesBagParam('id'),
-            'rules'           => [
-                $this->getRule('required')
-            ],
+//            'rules'           => [
+//                $this->getRule('required')
+//            ],
         ]));
 
         $metaData = $form->addChild($this->getElement('nested_fieldset', [

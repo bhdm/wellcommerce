@@ -36,6 +36,11 @@ class ProductTranslation implements LocaleAwareInterface, RoutableSubjectInterfa
     /**
      * @var string
      */
+    protected $model;
+
+    /**
+     * @var string
+     */
     protected $shortDescription;
 
     /**
@@ -77,6 +82,24 @@ class ProductTranslation implements LocaleAwareInterface, RoutableSubjectInterfa
         $this->name = $name;
     }
 
+    /**
+     * @return string
+     */
+    public function getModel()
+    {
+        return $this->model;
+    }
+
+    /**
+     * @param string $model
+     */
+    public function setModel($model)
+    {
+        $this->model = $model;
+    }
+
+
+    
     /**
      * @return string
      */
@@ -143,4 +166,6 @@ class ProductTranslation implements LocaleAwareInterface, RoutableSubjectInterfa
             'slug',
         ];
     }
+
+
 }

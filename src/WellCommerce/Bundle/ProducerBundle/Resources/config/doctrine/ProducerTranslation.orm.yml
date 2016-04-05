@@ -18,7 +18,8 @@ WellCommerce\Bundle\ProducerBundle\Entity\ProducerTranslation:
         slug:
             type: string
             length: 255
-            unique: true
+            unique: false
+            nullable: true
     oneToOne:
         route:
             targetEntity: WellCommerce\Bundle\ProducerBundle\Entity\ProducerRoute
